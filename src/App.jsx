@@ -6,6 +6,7 @@ import {
   Route,
   Redirect
 } from 'react-router-dom';
+import Dashboard from './components/dashboard/Dashboard';
 
 
 function App() {
@@ -13,6 +14,9 @@ function App() {
     <Router>
       <div className="App">
         <Route exact path = "/">
+          <Dashboard/>
+        </Route>
+        <Route path = "/login">
           <Login/>
         </Route>
         <Route path="/register">
